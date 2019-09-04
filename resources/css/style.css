@@ -69,8 +69,12 @@ h3 {
 
 /* ---- Feature Sections ---- */
 
-section {
+.section-features {
     padding: 80px 0;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px
 }
 
 /* ---- HEADER ---- */
@@ -186,4 +190,36 @@ header {
     display: block;
     color: rgba(230, 126, 34,1.0);
     margin-bottom: 10px;
+}
+
+/* ---- Meals Section ---- */
+
+.meals-showcase {
+    list-style: none;
+    width: 100%; 
+}
+
+.meals-showcase li {
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.meals-showcase li figure {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meals-showcase li figure img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.meals-showcase li figure img:hover {
+    transform: scale(1.03);
+    opacity: 1;
 }
